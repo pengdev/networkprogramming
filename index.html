@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Networkprogramming : Homework for network programming course at Aalto University">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Networkprogramming</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/liupengking1/networkprogramming">View on GitHub</a>
+
+          <h1 id="project_title">Networkprogramming</h1>
+          <h2 id="project_tagline">Homework for network programming course at Aalto University</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/liupengking1/networkprogramming/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/liupengking1/networkprogramming/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="network-programming" class="anchor" href="#network-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Network Programming</h1>
+
+<p>Homework for network programming course at Aalto University</p>
+
+<h2>
+<a id="http-client" class="anchor" href="#http-client" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTTP Client</h2>
+
+<h3>
+<a id="information" class="anchor" href="#information" aria-hidden="true"><span class="octicon octicon-link"></span></a>INFORMATION:</h3>
+
+<p>This is a program to perform HTTP GET/PUT function, it can get a text file from the HTTP server and put a text file to the server.</p>
+
+<h3>
+<a id="bulid--run--clean" class="anchor" href="#bulid--run--clean" aria-hidden="true"><span class="octicon octicon-link"></span></a>BULID &amp; RUN &amp; CLEAN:</h3>
+
+<p>In the home directory, type "make" to build.
+$make</p>
+
+<p>Usage of the program:
+"Usage:
+    ./httpclient hostname:portnumber/ 
+    to get a file OR
+    ./httpclient hostname:portnumber/ 
+    to put a file on the server</p>
+
+<p>The get function can get the text file from the server and save it to the local disk with the same filename.
+The put function can put the local text file indicated by  to the  on the server.</p>
+
+<p>The cleaning work is also simply type "make clean" in the terminal.
+$make clean
+Cleaning work will remove all generated files, including the excutable file and all the got .txt file.</p>
+
+<h2>
+<a id="http-server" class="anchor" href="#http-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTTP Server</h2>
+
+<h3>
+<a id="information-1" class="anchor" href="#information-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>INFORMATION:</h3>
+
+<p>This is a program to perform HTTP Server function, it can support standard GET and PUT request from several clients at the same time.</p>
+
+<h3>
+<a id="bulid--run--clean-1" class="anchor" href="#bulid--run--clean-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>BULID &amp; RUN &amp; CLEAN:</h3>
+
+<p>In the home directory, type "make" to build.
+$make</p>
+
+<p>Usage of the program:
+Usage:
+    ./httpserver </p>
+
+<p>if the port number is given in the command line, it will be used as the listening port, otherwise, the default port number is used, default port number is predefined as 8888.</p>
+
+<p>The cleaning work is also simply type "make clean" in the terminal.
+$make clean
+Cleaning work will remove all generated files, including the excutable file.</p>
+
+<h2>
+<a id="http-proxy" class="anchor" href="#http-proxy" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTTP Proxy</h2>
+
+<h3>
+<a id="information-2" class="anchor" href="#information-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>INFORMATION:</h3>
+
+<p>This is a program to perform HTTP proxy function, it can accept http get request and get a text file which is not existed in local folder from the other HTTP server in the routelist,it can also get and combine the index from the nearby servers in routelist.
+On the other hand, it can forward put a text file to the nearby server in the routelist as well as store it in local folder.
+The new header Hop-Count is added to scale the range of proxy.</p>
+
+<h3>
+<a id="bulid--run--clean-2" class="anchor" href="#bulid--run--clean-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>BULID &amp; RUN &amp; CLEAN:</h3>
+
+<p>In the home directory, type "make" to build.
+$make</p>
+
+<p>Usage of the program:
+Usage:
+    ./httpproxy </p>
+
+<p>if the port number is given in the command line, it will be used as the listening port, otherwise, the default port number is used, default port number is predefined as 8888.</p>
+
+<p>The cleaning work is also simply type "make clean" in the terminal.
+$make clean
+Cleaning work will remove all generated files, including the excutable file.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Networkprogramming maintained by <a href="https://github.com/liupengking1">liupengking1</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-57685134-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
