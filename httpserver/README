@@ -1,0 +1,23 @@
+______________________
+INFORMATION:          |
+______________________|
+This is a program to perform HTTP Server function, it can support standard GET and PUT request from several clients at the same time.
+______________________
+BULID & RUN & CLEAN:  |
+______________________|
+In the home directory, type "make" to build.
+$make
+
+Usage of the program:
+Usage:
+	./httpserver <port number>
+
+if the port number is given in the command line, it will be used as the listening port, otherwise, the default port number is used, default port number is predefined as 8888.
+
+
+
+The cleaning work is also simply type "make clean" in the terminal.
+$make clean
+Cleaning work will remove all generated files, including the excutable file.
+
+
